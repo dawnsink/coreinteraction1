@@ -1,0 +1,96 @@
+body {
+    background-color:  #FFF8E7; 
+    transition: 60s;
+    padding: 1rem;
+    margin: 4em;
+    font-family: Darker Grotesque, Arial, Helvetica, sans-serif; 
+    font-size: larger;
+  }
+  
+  h1 {
+    font-size: 72px;
+  }
+
+  p{
+    font-size: larger;
+  }
+/* buttons */
+.button {
+    background-color: Transparent;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+
+  /* unvisited link */
+  a:link {
+    color: black;
+    text-decoration: wavy underline;
+  }
+  /* visited link */
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  /* mouse over link */
+  a:hover {
+    color: magenta;
+    text-decoration: line-through;
+  }
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+  /* collapsable items */
+  .collapsible {
+    color: black;
+    font-family: Darker Grotesque, Arial, Helvetica, sans-serif; 
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: x-large;
+  }
+  .active,.collapsible:hover {
+    background-color: lime;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }
+
+
+table.GeneratedTable {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #2f36ee;
+  border-style: solid;
+  color: #000000;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #2f36ee;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.GeneratedTable thead {
+  background-color: #2f36ee;
+}
+
