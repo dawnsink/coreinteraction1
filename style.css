@@ -13,7 +13,7 @@ body {
 
 /* Style the header */
 header {
-  background-image: linear-gradient( rgb(253, 253, 253), rgba(254,0,0,0));
+  background-image: linear-gradient( rgb(253, 253, 253), rgba(253, 253, 253,0));
   padding: 20px;
   border: 1px solid black;
   border-radius: 150px;
