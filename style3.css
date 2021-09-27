@@ -7,13 +7,6 @@ body {
     font-size: larger;
   }
   
-  h1 {
-    font-size: 72px;
-  }
-
-  p{
-    font-size: larger;
-  }
 /* buttons */
 .button {
     background-color: Transparent;
@@ -92,5 +85,134 @@ table.GeneratedTable td, table.GeneratedTable th {
 
 table.GeneratedTable thead {
   background-color: #2f36ee;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  #FFF8E7;
+    /* https://web.archive.org/web/20161222101809/http://www.pha.jhu.edu/~kgb/cosspec/ */
+    transition: 20s;
+    font-family: Darker Grotesque, Arial, Helvetica, sans-serif; 
+    margin: 50px;
+}
+
+header {
+  background-image: linear-gradient( rgb(253, 253, 253), rgba(253, 253, 253, 0));
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 150px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+header p{
+  text-align: center;
+  font-size: 24px;
+  color: black;
+}
+
+.nav {
+  background-image: linear-gradient( rgb(253, 253, 253), rgba(254,0,0,0));
+  border: 1px solid black;
+  border-radius: 150px;
+  list-style-type: none;
+  text-align: center;
+  margin: 20px;
+  padding: 30px;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 28px;
+  padding: 30px;
+}
+
+article {
+  float: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.tutorial {
+  margin: 20xp;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.marquee {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(0deg, rgb(253, 253, 253), rgba(254,0,0,0));
+  color: black;
+  border: 1px solid black;
+  border-radius: 70px;
+}
+
+.marquee h2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 1s linear infinite;
+  -webkit-animation: scroll-left 1s linear infinite;
+  animation: scroll-left 60s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+      -webkit-transform: translateX(100%);
+  }
+  100% {
+      -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article, footer {
+    width: 90%;
+    height: auto;
+  }
 }
 
